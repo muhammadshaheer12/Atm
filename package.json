@@ -1,0 +1,20 @@
+{
+  "name": "muhammad-shaheer-12-atm",
+  "version": "7.0.2",
+  "description": "Atm is a console-based application with a user id and user pin",
+  "main": "main.js",
+  "type": "module",
+  "bin": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^9.2.16"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7"
+  }
+}
