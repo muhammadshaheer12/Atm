@@ -33,7 +33,7 @@ if (pinanswer.pin === mypin) {
         console.log("your remaining balance is: " + mybalance);
     }
     else if (cashans.cash === "check balance") {
-        console.log("your remaining balance is: " + mybalance);
+        console.log("your balance is: " + mybalance);
     }
 }
 else {
