@@ -1,7 +1,7 @@
 #! /usr/bin/env node
 import inquirer from "inquirer";
-let mybalance = 10000; // dollar
-let mypin = 1234;
+let mybalance = 15000; // dollar
+let mypin = 1597;
 let pinanswer = await inquirer.prompt([
     {
         name: "pin",
@@ -9,18 +9,18 @@ let pinanswer = await inquirer.prompt([
         type: "number"
     }
 ]);
-// 12345 === 1234 - false
+// 12345 === 1597 - false
 if (pinanswer.pin === mypin) {
-    console.log("correct pin code!!!");
-    let operationans = await inquirer.prompt([
+    console.log("right pin code!!!");
+    let cashans = await inquirer.prompt([
         {
-            name: "operation",
-            message: "please select option",
+            name: "cash",
+            message: "enter your amount ",
             type: "list",
             choices: ["withdraw", "check balance"]
         }
     ]);
-    if (operationans.operation === "withdraw") {
+    if (cashans.cash === "withdraw") {
         let amountans = await inquirer.prompt([
             {
                 name: "amount",
@@ -32,10 +32,10 @@ if (pinanswer.pin === mypin) {
         mybalance -= amountans.amount;
         console.log("your remaining balance is: " + mybalance);
     }
-    else if (operationans.oeration === "check balance") {
-        console.log("yourbalance is: " + mybalance);
+    else if (cashans.cash === "check balance") {
+        console.log("your remaining balance is: " + mybalance);
     }
 }
 else {
-    console.log("incorrect pin number");
+    console.log("wrong pin number");
 }

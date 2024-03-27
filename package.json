@@ -1,6 +1,6 @@
 {
   "name": "muhammad-shaheer-12-atm",
-  "version": "7.0.6",
+  "version": "8.0.0",
   "description": "Atm is a console-based application with a user id and user pin",
   "main": "main.js",
   "type": "module",
@@ -13,7 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "inquirer": "^9.2.16",
-    "muhammad-shaheer-12-atm": "^7.0.2"
+    "muhammad-shaheer-12-atm": "^7.0.6"
   },
   "devDependencies": {
     "@types/inquirer": "^9.0.7"
