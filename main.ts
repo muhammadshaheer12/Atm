@@ -41,7 +41,7 @@ if (pinanswer.pin === mypin) {
        }
     }
     else if (operationans.operation === "check balance") {
-        console.log(`your remaining amount is: {mybalance}`);
+        console.log(`your remaining amount is: ${mybalance}`);
     }
     if (operationans.operation === "fast cash") {
     let fastcashans = await inquirer.prompt(
@@ -55,7 +55,7 @@ if (pinanswer.pin === mypin) {
         ]
     );
     mybalance -= fastcashans.fastcash
-    console.log(`your remaining amount is: {mybalance}`);
+    console.log(`your remaining amount is: ${mybalance}`);
    }
 }
 else {
