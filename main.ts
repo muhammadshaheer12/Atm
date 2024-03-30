@@ -5,9 +5,9 @@ let mypin = 1234;
 let pinanswer = await inquirer.prompt(
     [
         {
-    name: "pin",
-    message: "enter your pin",
-    type: "number",
+            name: "pin",
+            message: "enter your pin",
+            type: "number",
         }
     ]
 );
@@ -33,31 +33,31 @@ if (pinanswer.pin === mypin) {
                 }
             ]
         );
-        if (amountans.amount > mybalance) {
-        console.log(`your balance is: ${mybalance}`);
-       }
-       else {
-        console.log("insufficient balance");
-       }
+        if (mybalance -= amountans.amount) {
+            console.log(`your remaining amount is: ${mybalance}`);
+        }
+            if (amountans.amount > mybalance) {
+                console.log("insufficient balance");
+        }
     }
-    else if (operationans.operation === "checkbalance") {
-        console.log(`your remaining amount is: ${mybalance}`);
-    }
-    if (operationans.operation === "fastcash") {
-    let fastcashans = await inquirer.prompt(
-        [
-            {
-                name: "fastcash",
-                message: "enter your amount ",
-                type: "list",
-                choices: ["2000", "5000", "7000", "9000"],
+        if (operationans.operation === "checkbalance") {
+            console.log(`your balance is: ${mybalance}`);
+        }
+        if (operationans.operation === "fastcash") {
+            let fastcashans = await inquirer.prompt(
+                [
+                    {
+                        name: "fastcash",
+                        message: "enter your amount ",
+                        type: "list",
+                        choices: ["2000", "5000", "7000", "9000"],
+                    }
+                ]
+            );
+             mybalance -= fastcashans.fastcash
+             console.log(`your remaining amount is: ${mybalance}`);
             }
-        ]
-    );
-    mybalance -= fastcashans.fastcash
-    console.log(`your remaining amount is: ${mybalance}`);
-   }
-}
-else {
-    console.log("incorrect pin code");
-}
+        }
+        else {
+             console.log("incorrect pin code")
+        }

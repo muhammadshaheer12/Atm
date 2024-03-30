@@ -27,15 +27,15 @@ if (pinanswer.pin === mypin) {
                 type: "number",
             }
         ]);
-        if (amountans.amount > mybalance) {
-            console.log(`your balance is: ${mybalance}`);
+        if (mybalance -= amountans.amount) {
+            console.log(`your remaining amount is: ${mybalance}`);
         }
-        else {
+        if (amountans.amount > mybalance) {
             console.log("insufficient balance");
         }
     }
-    else if (operationans.operation === "checkbalance") {
-        console.log(`your remaining amount is: ${mybalance}`);
+    if (operationans.operation === "checkbalance") {
+        console.log(`your balance is: ${mybalance}`);
     }
     if (operationans.operation === "fastcash") {
         let fastcashans = await inquirer.prompt([
