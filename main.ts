@@ -36,8 +36,8 @@ if (pinanswer.pin === mypin) {
         if (mybalance -= amountans.amount) {
             console.log(`your remaining amount is: ${mybalance}`);
         }
-            if (amountans.amount > mybalance) {
-                console.log("insufficient balance");
+        if (amountans.amount > mybalance) {
+            console.log("insufficient balance");
         }
     }
         if (operationans.operation === "checkbalance") {

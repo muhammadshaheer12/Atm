@@ -1,6 +1,6 @@
 {
   "name": "muhammad-shaheer-12-atm",
-  "version": "9.0.1",
+  "version": "9.0.2",
   "description": "Atm is a console-based application with a user id and user pin",
   "main": "main.js",
   "type": "module",
