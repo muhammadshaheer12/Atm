@@ -33,7 +33,7 @@ if (pinanswer.pin === mypin) {
                 }
             ]
         );
-       if  (amountans.amount === " mybalance") {
+        if (amountans.amount > mybalance) {
         console.log(`your balance is: ${mybalance}`);
        }
        else {
